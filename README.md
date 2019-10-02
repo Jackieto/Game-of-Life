@@ -7,3 +7,27 @@ SDL2.
 
 ## Future
 While the Game of Life itself its already done, I'm planning to play with the algorithm and even trying to implement new features, stay tuned!
+
+### How to compile source code
+```
+* Install SDL2. You can find a tutorial [here](https://www.youtube.com/watch?v=MTIUfkkbxSE)
+
+```
+
+### Prerequisites
+```
+* Windows 10
+* Dev C++
+* Visual Studio 2017
+```
+
+### To do
+```
+
+```
+
+### License
+```
+
+```
+
