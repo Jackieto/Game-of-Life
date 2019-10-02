@@ -11,6 +11,7 @@ While the Game of Life itself its already done, I'm planning to play with the al
 ### How to compile source code
 ```
 * Install SDL2. You can find a tutorial [here](https://www.youtube.com/watch?v=MTIUfkkbxSE)
+* Compile and run in Dev C++
 
 ```
 
