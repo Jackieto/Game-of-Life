@@ -29,6 +29,6 @@ While the Game of Life itself its already done, I'm planning to play with the al
 
 ### License
 ```
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 ```
 
