@@ -1,7 +1,9 @@
 #include "Game.h"
+/*
 #include <ctime>
 #include <stdlib.h>
 #include <cstdlib>
+*/
 
 SDL_Point mouse_position;
 constexpr static int WINH = 800;
@@ -72,22 +74,6 @@ bool Game::Initialize()
 	SDL_SetRenderDrawColor(mRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
 	SDL_RenderClear(mRenderer);
 
-	/*
-	TTF_Font* Font = TTF_OpenFont("Fonts\FONT1.ttf", 24);
-	SDL_Color Red = { 255,0,0 };
-	SDL_Surface* surfaceMessage = TTF_RenderText_Solid(Font, "put your text here", Red);
-	SDL_Texture* Message = SDL_CreateTextureFromSurface(mRenderer, surfaceMessage);
-	SDL_Rect Message_rect;
-	Message_rect.x = 0;  //controls the rect's x coordinate 
-	Message_rect.y = 0; // controls the rect's y coordinte
-	Message_rect.w = 100; // controls the width of the rect
-	Message_rect.h = 100;
-	SDL_RenderCopy(mRenderer, Message, NULL, &Message_rect);
-	*/
-
-
-
-
 	int x = 0;
 	int y = 0;
 	int tempsize = 0;
@@ -116,11 +102,6 @@ bool Game::Initialize()
 			cont++;
 		}
 	SDL_RenderPresent(mRenderer);
-
-
-
-
-
 
 	return true;
 }
@@ -704,6 +685,5 @@ void Game::Shutdown()
 	Grid.clear();
 	SDL_DestroyRenderer(mRenderer);
 	SDL_DestroyWindow(mWindow);
-	//SDL_DestroyTexture(Message);
 	SDL_Quit();
 }

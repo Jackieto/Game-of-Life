@@ -1,13 +1,11 @@
-// WorldWar Sim.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
 
 
 #include "pch.h"
 #include "Game.h"
-#include <stdio.h>
+#include <cstdlib>
 #include <iostream>
 
-#include "Game.h"
+
 
 int main(int argc, char** argv)
 {
