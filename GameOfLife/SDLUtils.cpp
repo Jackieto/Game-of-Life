@@ -1,6 +1,6 @@
 
 
-
+/*
 #include "include/SDL.h"
 #include <iostream>
 
@@ -35,3 +35,5 @@ void createWindow() {
 	SDL_DestroyWindow(window);
 	SDL_Quit();
 }
+
+*/

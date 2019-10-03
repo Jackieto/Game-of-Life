@@ -1,5 +1,5 @@
 #pragma once
-#include "include/SDL.h"
+#include "SDL.h"
 
 struct Vector2
 {

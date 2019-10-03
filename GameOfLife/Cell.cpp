@@ -11,9 +11,6 @@ Cell::Cell(): _state(false), _numAdy(0), _check(false)
 	
 }
 
-/*
-temp = { this->getX() * 10, this->getY() * 10,10,10 };
-	_Rect = &temp;*/
 
 Cell::Cell(const Cell& orig) {
 	CellPos = orig.CellPos;
