@@ -1,9 +1,4 @@
 #include "Game.h"
-/*
-#include <ctime>
-#include <stdlib.h>
-#include <cstdlib>
-*/
 
 SDL_Point mouse_position;
 constexpr static int WINH = 800;
@@ -401,7 +396,6 @@ int Game::numAdy(int x) {
 			numADY++;
 		}
 
-
 	}
 	//UpperRight corner cell, can only check for down, left and diagonaldownleft cells
 
@@ -679,6 +673,7 @@ void Game::getMousePos() {
 	SDL_Log("Mouse pos at: x=%i, y=%i", mouse_position.x, mouse_position.y);
 
 }
+
 
 void Game::Shutdown()
 {

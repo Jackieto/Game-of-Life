@@ -9,7 +9,6 @@
 
 int main(int argc, char** argv)
 {
-	std::cout << "HELLO ";
 	Game game;
 	bool success = game.Initialize();
 	if (success)
@@ -19,7 +18,7 @@ int main(int argc, char** argv)
 		}
 	}
 	game.Shutdown();
-	     
+	  
 	return 0;
 
 	}

@@ -37,8 +37,6 @@ public:
 
 	void setPos(int x, int y, int vx, int vy);
 
-	
-
 
 private:
 	SDL_Rect* _Rect;
