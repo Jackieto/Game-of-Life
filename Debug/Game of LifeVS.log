@@ -1,1 +1,4 @@
-﻿  Game of LifeVS.vcxproj -> F:\Repos\Game of Life\Debug\Game of LifeVS.exe
+﻿  Game.cpp
+f:\repos\game of life\gameoflife\game.cpp(688): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+f:\repos\game of life\gameoflife\game.cpp(691): warning C4101: 'y': unreferenced local variable
+  Game of LifeVS.vcxproj -> F:\Repos\Game of Life\Debug\Game of LifeVS.exe

@@ -30,6 +30,7 @@ private:
 	void randomizeGrid();
 	int numAdy(int x); //adyacents neighbours
 	void PauseExit();
+	void drawallcells();
 	void drawCell(int x);
 	void eraseCell(int x);
 

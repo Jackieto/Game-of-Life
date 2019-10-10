@@ -1,4 +1,5 @@
 #include "Game.h"
+#include <time.h>
 
 SDL_Point mouse_position;
 constexpr static int WINH = 800;
@@ -215,6 +216,13 @@ void Game::ProcessInput()
 				}
 			}
 		}
+	}
+
+	//randomize
+	const Uint8* state = SDL_GetKeyboardState(NULL);
+
+	if (state[SDL_SCANCODE_R]) {
+		randomizeGrid();
 	}
 	delete b;
 	drawGrid();
@@ -674,6 +682,37 @@ void Game::getMousePos() {
 
 }
 
+/*Grid randomizer, it generates a random number of living cells and then assign to each of them a random position*/
+void Game::randomizeGrid() {
+	
+	srand(time(0));
+
+	int n = rand() % numCells / 4;
+	int x, y;
+
+	int cont = 0;
+	while (cont < n) {
+		x = rand() % numCells;
+		
+		if (Grid[x][0]->getState() == false) {
+			Grid[x][0]->setState(true);
+		}
+		cont++;
+	}
+	GenerateOutput();
+
+	/*
+	std::vector<std::vector<std::unique_ptr<Cell>>>::iterator row;
+	std::vector<std::unique_ptr<Cell>>::iterator col;
+
+	for (row = Grid.begin(); row != Grid.end(); row++) {
+		for (col = row->begin(); col != row->end(); col++) {
+
+		}
+	}
+	*/
+
+}
 
 void Game::Shutdown()
 {
