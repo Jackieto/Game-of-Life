@@ -699,7 +699,7 @@ void Game::randomizeGrid() {
 		}
 		cont++;
 	}
-	GenerateOutput();
+	GenerateOutput(); 
 
 	/*
 	std::vector<std::vector<std::unique_ptr<Cell>>>::iterator row;
